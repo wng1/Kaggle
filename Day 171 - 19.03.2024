@@ -1,0 +1,13 @@
+1. Introduction of the scenario and problem
+2. Add your Libraries
+3. Load the data
+
+#Assign variable to read the csv file path using Pandas
+train = pd.read.csv('_________________/train.csv',
+
+#Insert and Create a Function with one argument to pass the Date Column and turn the DateTime string into Python's DateTime Format object
+index_col='id', parse_dates=['date'], date_parser=lambda x: datetime.strptime(x, '%Y-%m-%d'))
+
+#Return several rows of the CSV file declared earlier
+train.head()
+
