@@ -11,3 +11,12 @@ index_col='id', parse_dates=['date'], date_parser=lambda x: datetime.strptime(x,
 #Return several rows of the CSV file declared earlier
 train.head()
 
+#Return the count, dtype and number of rows that are not null
+train.info()
+
+#Provide the total sum number of missing values in each column
+train.isnull().sum()
+
+
+
+
